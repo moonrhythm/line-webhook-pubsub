@@ -7,7 +7,7 @@ Send events from line webhook to pubsub.
 ### Cloud Run
 
 ```shell script
-gcloud beta run deploy line-webhook-pubsub \
+gcloud run deploy line-webhook-pubsub \
   --async \
   --platform=managed \
   --region=asia-northeast1 \

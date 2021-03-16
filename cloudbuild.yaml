@@ -1,8 +1,4 @@
 steps:
-- name: gcr.io/moonrhythm-containers/golang:1.12.7-alpine3.10
-  args: [go, build, -o, server, main.go]
-  env:
-  - GOPROXY=https://proxy.golang.org
 - name: gcr.io/cloud-builders/docker
   args: [build, -t, gcr.io/$PROJECT_ID/line-webhook-pubsub, '.']
 - name: gcr.io/cloud-builders/docker
